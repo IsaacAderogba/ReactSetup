@@ -1,6 +1,10 @@
 const path = require('path');
+const BundleAnalyzer = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
 module.exports = {
+  plugins: [new BundleAnalyzer()],
+  devtool: 'source-map',
+
   // 'production' mode would minify and uglify the code, and use React's production code
   mode: 'development',
   // entry is the starting point for the web made by our files through imports and exports
