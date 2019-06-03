@@ -12,7 +12,7 @@ module.exports = {
   },
   // types of files we want Webpack to bundle
   resolve: {
-    extensions: ['.js', '.jsx'],
+    extensions: ['.js', '.jsx', '.less'],
   },
   module: {
     rules: [
@@ -22,6 +22,11 @@ module.exports = {
         use: {
           loader: 'babel-loader',
         },
+      },
+      {
+        test: /\.less$/,
+        exclude: /node_modules/,
+        use: [{ loader: 'style-loader' }, { loader: 'css-loader' }, { loader: 'less-loader' }],
       },
     ],
   },
