@@ -1,0 +1,20 @@
+{
+  "name": "ReactSetup",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IsaacAderogba/ReactSetup.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IsaacAderogba/ReactSetup/issues"
+  },
+  "homepage": "https://github.com/IsaacAderogba/ReactSetup#readme"
+}
